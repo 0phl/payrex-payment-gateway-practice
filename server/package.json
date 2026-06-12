@@ -1,0 +1,14 @@
+{
+  "name": "payrex-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "payrex-node": "^1.0.0"
+  }
+}

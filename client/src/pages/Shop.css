@@ -1,0 +1,83 @@
+.shop {
+  padding-top: 0;
+}
+
+.shop-hero {
+  text-align: center;
+  padding: 160px 40px 80px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.shop-title {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 300;
+  color: var(--color-text);
+  margin: 12px 0 16px;
+}
+
+.shop-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+.shop-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 40px 0 60px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+}
+
+.filter-btn:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.filter-btn.active {
+  background: var(--color-text);
+  color: white;
+  border-color: var(--color-text);
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 0;
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .shop-hero {
+    padding: 140px 24px 60px;
+  }
+
+  .shop-title {
+    font-size: 36px;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
