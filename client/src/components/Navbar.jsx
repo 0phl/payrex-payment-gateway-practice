@@ -19,9 +19,11 @@ function Navbar() {
     setMenuOpen(false);
   }, [location]);
 
+  const isHome = location.pathname === '/';
+
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isHome ? 'navbar-home' : 'navbar-page'}`}>
         <div className="navbar-inner">
           <Link to="/" className="navbar-logo">
             Bloomfield
